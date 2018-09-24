@@ -19,10 +19,12 @@ gulp.task('scripts', ()=>{
     return gulp.src([
         'app/libs/jquery/dist/jquery.min.js', // подключаем jquery
         // 'app/libs/superfish/dist/js/hoverIntent.js', // подключаем superfish
-        'app/libs/superfish/dist/js/superfish.js', // подключаем supersubs
+        // 'app/libs/superfish/dist/js/superfish.js', // подключаем supersubs
         // 'app/libs/superfish/dist/js/supersubs.js', // подключаем supersubs
         // 'app/libs/mmenu/dist/jquery.mmenu.all.js', // подключаем mmenu
-        'app/libs/dist/owl.carousel/dist/owl.carousel.js', // подключаем owl.carousel
+         'app/libs/rounded/js/velocity.min.js', // подключаем velocity.min.js
+         'app/libs/rounded/js/main.js', // подключаем mmenu
+        'app/libs/dist/owl.carousel/dist/owl.carousel.js' // подключаем owl.carousel
     ])
         .pipe(concat('libs.min.js'))
         .pipe(uglify()) // сжимаем полученный файл
