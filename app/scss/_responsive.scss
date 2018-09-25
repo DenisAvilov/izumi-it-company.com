@@ -54,4 +54,14 @@
 	  padding-top: 20px;
 	}
   }
+  .top-slider{
+	.slide{
+	  &-content{
+		padding-left: 20px;
+		h1{
+           font-size: 2.4em;
+		}
+	  }
+	}
+  }
 }
