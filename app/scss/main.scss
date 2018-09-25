@@ -31,6 +31,9 @@ h2{
     z-index: 1;
     right: 0;
     .top-link {
+      nav{
+        padding: 0 15px;
+      }
       background-color: rgba(#001A33, 0.9);
       .top-item-wrap {
         min-height: 100px;
@@ -72,7 +75,6 @@ h2{
         .item {
           margin-left: 2.5em;
         }
-
       }
     }
     .cd-nav-trigger {
@@ -114,9 +116,10 @@ h2{
           right: 0;
         }
       }
-      &-content {
+      &-content{
         position: relative;
         article {
+          padding: 0 20px;
           justify-content: center;
           padding-top: 180px;
           padding-bottom: 100px;
@@ -145,6 +148,7 @@ h2{
 
   }
   main{
+    padding-bottom: 30px;
     .h2{
       text-align: center;
       position: relative;
@@ -165,7 +169,6 @@ h2{
       }
 
     }
-    padding-bottom: 100px;
     .person{
       flex-basis: 310px;
       margin-bottom: 40px;
@@ -213,7 +216,6 @@ h2{
       }
 
     }
-
     .btn{
       display: block;
       font-size: 16px;
@@ -241,9 +243,99 @@ h2{
 
     }
   }
+  .s-second-slider {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: #f7f7f7;
+    .h2 {
+      position: relative;
+      font-family: Raleway, sans-serif;
+      display: block;
+      margin: auto;
+      margin-bottom: 100px;
+      text-align: center;
+      width: 300px;
+      &:before{
+        position: absolute;
+        content: "";
+        width: 70px;
+        height: 1px;
+        background-color: $hcolor;
+        left: 38%;
+        bottom: -25px;
 
+      }
+    }
+    figure{
+      width: 100px;
+      margin: 0 auto;
+      img{
+        width: 100%;
+        border-radius: 50%;
+        margin-bottom: 40px;
+      }
+    }
+    aside{
+      min-width: 250px;
+      margin: 0 auto;
+      h3{
+        color: $active;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        margin-bottom: 5px;
+        font-weight: 600;
+      }
 
-
+    }
+    p{
+      margin-bottom: 20px;
+      padding: 0 15px;
+    }
+  }
+  footer{
+    padding-top: 100px;
+    padding-bottom: 40px;
+    background-color: $footer;
+    color: #6e7279;
+    .h2{
+      color: $active;
+      text-align: left;
+      font-size: 14px;
+      font-weight: 400;
+      margin-bottom: 20px;
+    }
+    input{
+      width: 100%;
+      margin-bottom: 10px;
+      border: 1px solid white;
+      outline: none;
+      height: 30px;
+      transition:  background-color 0.5s ease,
+      border-color  0.5s ease;
+    }
+    input[type=email]{
+      background-color: inherit;
+      padding-left: 10px;
+      color: white;
+    }
+    input[type=email]:hover{
+      border-color: $active;
+    }
+    input[type=submit]{
+    background-color: $active;
+    color: white;
+    border: none;
+    }
+    input[type=submit]:hover{
+      background-color: darken($active, 9.5);
+    }
+    input[type=submit]:active{
+      background-color: $active;
+    }
+    .footer-col{
+      margin-bottom: 20px;
+    }
+  }
 
 }
 
