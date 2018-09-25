@@ -20,7 +20,8 @@ gulp.task('scripts', ()=>{
         'app/libs/jquery/dist/jquery.min.js', // подключаем jquery
          'app/libs/rounded/js/velocity.min.js', // подключаем velocity.min.js
          'app/libs/rounded/js/main.js', // подключаем rounded
-        'app/libs/owl.carousel/dist/owl.carousel.js' // подключаем owl.carousel
+        'app/libs/owl.carousel/dist/owl.carousel.js'// подключаем owl.carousel
+        // 'app/libs/magnific-popup/dist/jquery.magnific-popup.min.js' // подключаем popup
     ])
         .pipe(concat('libs.min.js'))
         .pipe(uglify()) // сжимаем полученный файл

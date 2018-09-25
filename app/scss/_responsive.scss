@@ -1,19 +1,19 @@
 @media only screen and (max-width: 48em){
-
-  .header{
-	.top-link{
-	  .item{
+.my-page {
+  .header {
+	.top-link {
+	  .item {
 		display: none;
 	  }
-	  .item-logo{
+	  .item-logo {
 		margin-left: 20px;
 	  }
 	}
-	.top-mobile{
-		flex-direction: column;
+	.top-mobile {
+	  flex-direction: column;
 	  flex-wrap: wrap;
-		.item{
-		  display: block;
+	  .item {
+		display: block;
 	  }
 	  a {
 		color: white;
@@ -43,25 +43,39 @@
 
 	  }
 	}
-	.cd-nav-trigger{
+	.cd-nav-trigger {
 	  top: 37px;
 	  display: block;
-	  a{
+	  a {
 		color: white;
 	  }
 	}
-	.cd-primary-nav{
-	  padding-top: 20px;
+	.cd-primary-nav {
+	  padding-top: 37px;
+	   li {
+		margin: 0.4em 0;
+	   }
 	}
   }
-  .top-slider{
-	.slide{
-	  &-content{
+  .top-slider {
+	  padding-bottom: 80px;
+	.slide {
+	  &-content {
 		padding-left: 20px;
-		h1{
-           font-size: 2.4em;
+		h1 {
+		  font-size: 2.4em;
 		}
 	  }
 	}
   }
+  main{
+	.person{
+	  margin-bottom: 0;
+	}
+	figure{
+	  margin-bottom: 50px;
+	}
+  }
+}
+
 }

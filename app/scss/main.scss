@@ -3,9 +3,10 @@
 @import "reset";
 @import "../libs/owl.carousel/dist/assets/owl.carousel";
 @import "varieble";
+
 body{
   font:400 14px/20px OpenSans, sans-serif;
-
+  color: $hcolor;
 }
 h1,h2,h3{
   font-family: 'Raleway', sans-serif;
@@ -59,7 +60,6 @@ h2{
             left: -10%;
             right: -10%;
           }
-
         }
         .item-logo {
           margin-right: auto;
@@ -120,6 +120,7 @@ h2{
           justify-content: center;
           padding-top: 180px;
           padding-bottom: 100px;
+
           a {
             display: inline-block;
           }
@@ -128,6 +129,9 @@ h2{
           color: #ffffff;
           font: 700 2.5em/55px Raleway, sans-serif;
           text-transform: uppercase;
+        }
+        p{
+          color: white;
         }
       }
     }
@@ -141,22 +145,106 @@ h2{
 
   }
   main{
-    h2{
+    .h2{
       text-align: center;
       position: relative;
-      margin-bottom: 60px;
+      font-family: Raleway, sans-serif;
+      margin-bottom: 50px;
+      width: 200px;
+      margin-left: auto;
+      margin-right: auto;
       &:before{
         position: absolute;
         content: "";
         width: 75px;
         height: 1px;
         background-color: #b5a263;
-        left: 47%;
-        bottom: -10px;
+        left: 30%;
+        bottom: -25px;
 
       }
+
+    }
+    padding-bottom: 100px;
+    .person{
+      flex-basis: 310px;
+      margin-bottom: 40px;
+    }
+    figure{
+        max-width: 310px;
+      img{
+        width: 100%;
+      }
+      figcaption{
+        padding-left: 9px;
+        padding-right: 6px;
+        padding-top: 30px;
+        h2{
+          font: 500 1em/1.2 Raleway, sans-serif;
+          color: $h2color;
+          text-transform: uppercase;
+        }
+        p{
+          color: $active;
+        }
+      }
+    }
+    .icon-soc{
+     margin-left: auto;
+       .icon-soc-facebook{
+         padding-left: 12px;
+         padding-right: 12px;
+       }
+      a{
+        padding: 8px;
+        margin-right: 10px;
+        background-color: #dedede;
+        border-radius: 50%;
+        transition: background-color 0.7s ease,
+        color 0.7s ease, box-shadow 0.7s ease;
+        &:hover{
+          background-color: $active;
+          box-shadow: 1px 1px 1px $hcolor;
+        }
+        &:hover i{
+          transition: color 0.7s ease;
+          color: $hcolor;
+        }
+      }
+
+    }
+
+    .btn{
+      display: block;
+      font-size: 16px;
+      text-transform: uppercase;
+      color: $hcolor;
+      text-align: center;
+      cursor: pointer;
+      padding: 10px 35px;
+      border-radius: 30px;
+      border: 1px solid $hcolor;
+      width: 167px;
+      margin: 0 auto;
+      letter-spacing: 1px;
+      transition: text-shadow 0.4s ease,
+      background-color 0.4s ease,
+      letter-spacing 0.4s ease;
+      &:hover{
+        text-shadow: 1px 1px 1px $active;
+        background-color: rgba($active, 0.1);
+      }
+      &:active{
+        text-shadow: 1px 1px 1px darken($active, 80);
+        letter-spacing: 1.3px;
+      }
+
     }
   }
+
+
+
+
 }
 
 
@@ -164,22 +252,6 @@ h2{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @import "../libs/rounded/css/style.css";
-
 @import "../libs/flexboxgrid/dist/flexboxgrid.css";
 @import "responsive";
