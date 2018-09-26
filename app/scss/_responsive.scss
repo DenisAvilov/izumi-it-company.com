@@ -2,6 +2,9 @@
 .my-page {
   .header {
 	.top-link {
+	  .top-item-wrap{
+		min-height: 50px;
+	  }
 	  .item {
 		display: none;
 	  }
@@ -44,7 +47,7 @@
 	  }
 	}
 	.cd-nav-trigger {
-	  top: 37px;
+	  top: 8px;
 	  display: block;
 	  a {
 		color: white;
@@ -63,8 +66,8 @@
 	  &-content {
 		padding-left: 20px;
 		article{
-		  padding-top: 128px;
-		  padding-bottom: 55px;
+		  padding-top: 77px;
+		  padding-bottom: 37px;
 		}
 		h1 {
 		  font-size: 2.2em;
@@ -99,7 +102,12 @@
 	}
   }
   footer{
-
+	.footer-col{
+	  margin-bottom: 20px;
+	  p{
+       padding-right: 0;
+	  }
+	}
 	padding-top: 30px;
 	padding-bottom: 10px;
 
@@ -111,6 +119,42 @@
 	  padding-right: 15px;
 	}
 
+  }
+  .copyright{
+	.copyright-wrap{
+	  padding-top: 10px;
+	  padding-bottom: 10px;
+	  flex-direction: column;
+	  justify-content: center;
+
+
+	}
+	.footer-item{
+	  margin-right: 0;
+	  margin-bottom: 5px;
+	}
+	.footer-item-right{
+	  .icon-soc{
+		i{
+		  font-size: 12px;
+		  color: #6e7279;
+		  position: relative;
+		  &:before{
+			position: relative;
+			top: 1px;
+		  }
+		}
+		.icon-soc-facebook{
+		  padding: 5px 11px;
+		}
+		.my-google{
+		  padding: 5px 8px;
+		}
+	  }
+	  a{
+		padding: 5px 9px;
+	  }
+	}
   }
 }
 

@@ -247,6 +247,48 @@ h2{
   }
   .s-second-slider {
     //display: none;
+
+    .slider-second{
+      overflow: hidden;
+      position: relative;
+      .slid-second{
+        position: relative;
+      }
+      .owl-nav{
+        position: absolute;
+        top: 50%;
+        width: 100%;
+
+
+        button{
+          background-color: inherit;
+          border: none;
+          &:active,&:focus{
+            outline: none;
+          }
+        }
+        i:active{
+          text-shadow: 1px 1px 1px $active;
+        }
+        .owl-prev{
+            position: relative;
+          &:before{
+            position: relative;
+            content: "";
+
+
+          }
+        }
+        .owl-next{
+         float: right;
+        }
+      }
+
+    }
+
+    .second-wrap{
+      float: left;
+    }
     padding-top: 100px;
     padding-bottom: 100px;
     background-color: #f7f7f7;
@@ -338,6 +380,9 @@ h2{
     }
     .footer-col{
       margin-bottom: 20px;
+      p{
+        padding-right: 30px;
+      }
     }
 
   }
@@ -345,7 +390,7 @@ h2{
     background-color: #24282f;
     color: #6e7279;
     .copyright-wrap{
-      height: 60px;
+     min-height: 60px;
     }
     .footer-item{
 
@@ -355,14 +400,13 @@ h2{
     .footer-item-right{
       margin-right: 10px;
       .icon-soc{
-
         i{
           font-size: 16px;
           color: #6e7279;
            position: relative;
           &:before{
             position: relative;
-            top:2px;
+            top: 1px;
           }
           }
         .icon-soc-facebook{
@@ -378,6 +422,15 @@ h2{
           border: 1px solid #6e7279;
           padding: 5px 7px;
           text-align: center;
+         transition: all 0.5s ease;
+         &:hover{
+           border-color: $active ;
+           background-color: $active;
+         }
+         &:hover i{
+           transition:  all 0.5s ease;
+           color: white;
+         }
 
       }
     }
