@@ -730,9 +730,9 @@
     order: 1;
   }
 }
-@media only screen and (min-width: 71.3em) {
+@media only screen and (min-width: 70em) {
   .container {
-    width: 71.3rem;
+    width: 70rem;
   }
 
   .col-lg,
@@ -960,3 +960,10 @@
     order: 1;
   }
 }
+@media only screen and (min-width: 85.6em){
+  .container-nav{
+    width: 85.6rem;
+    margin: 0 auto;
+  }
+}
+
