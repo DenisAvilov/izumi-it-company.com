@@ -85,8 +85,20 @@
   }
   .s-second-slider{
 	padding-top: 50px;
+	.slider-second{
+	  .owl-nav{
+		left: 10px;
+		width: 93%;
+		button{
+		  font-size: 18px;
+		}
+	  }
+	}
 	.h2{
 	  margin-bottom: 50px;
+	}
+	article{
+	  padding: 0 25px;
 	}
 	figure img{
 	  margin-bottom: 20px;
