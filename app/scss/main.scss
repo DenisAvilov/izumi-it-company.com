@@ -68,8 +68,10 @@ h2{
           margin-right: auto;
           padding-bottom: 0.2em;
           padding-top: 1.1em;
-          &:hover:after {
+           a:hover:after{
             position: relative;
+            display: none;
+
           }
         }
         .item {

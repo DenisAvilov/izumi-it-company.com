@@ -91,7 +91,7 @@ $(document).ready(function(){
         $('.contact').on('click',function (ls) {
             if(ls !== null){
                 $('html, body').animate({
-                    scrollTop: 1650
+                    scrollTop: 2000
                 }, 1000);
             }
 
